@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FilmFanatics - LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="login.css" >
+    <link rel="shortcut icon" type="image/gif" href="Images/icon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="login.js"></script>
+</head>
+
+<body> 
+
+    <div class="gen">
+        <div id="gen1" class="gen-box" style="display:unset;">
+            <h2>LOGIN</h2>
+            <form action="../index.html">
+
+                <div class="field">
+                    <i id="ep_icon" class="uil uil-at"></i>
+                    <input id="user_name" type="email" placeholder="Email ID" required>
+                </div>
+
+                <div class = "field">
+                    <i class="uil uil-lock-alt"></i>
+                    <input id="login-pass" class="password-input" type="password" placeholder="Password" required>   
+                    <div class="eye-btn" onclick="return reveal()">
+                        <i id="eyeb" class="uil uil-eye-slash"></i>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="forgot">
+                    <a href="../index.html">Forgot Password?</a>
+                </div>
+
+                <input class="submit" type="submit" value="Login" href = "../index.html">
+
+                <div class="phone" onclick="Change_ph()">
+                    <p id="ph_text" >Use phone number instead</p>
+                </div>
+
+            </form>
+
+            <div class="log-opt">
+                <p class="text">Or, login with</p>
+                <div class="other-log">
+                    <a href="https://www.google.com/account/about/" target="_blank"><img src="Images/Ggl.png" alt="Google"></a>
+                    <a href="https://myaccount.microsoft.com/?ref=MeControl&login_hint=jamon%40microsoft.com" target="_blank"><img src="Images/ms.png" alt="Microsoft"></a>
+                    <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569900%7Cb%7Cfb%20login%27%7C&placement=&creative=589460569900&keyword=fb%20login%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-370844460174%26loc_physical_ms%3D9148884%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw-IWkBhBTEiwA2exyO_Es6AYLyWnpum9qlzol5glwUu8JHNDWhIryro_1qqPRTqGRpXU-ghoCjIkQAvD_BwE" target="_blank"><img src="Images/fb.png" alt="Facebook"></a>
+                    <a href="https://www.icloud.com/" target="_blank"><img src="Images/apple.png" alt="Apple"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="img1" class="img-box" style="display: unset;">
+            <div class="sliding-link">
+                <p>Dont have an account?</p>
+                <span class = "sign-up-btn" onclick="signup()">Sign up</span>
+            </div>
+
+            <img src="Images/sign_up.png" alt="SIGN UP">
+        </div>
+
+        <div class="gen temp">
+
+        <div id="img2" class="in-img-box" style="height:550px;width:250pt;display: none;">
+            <div class="sliding-link">
+                <p>An existing user?</p>    
+                <span class="sign-in-btn" onclick="signin()">Sign in</span>
+            </div>
+
+                <img src="Images/sign_in.png" alt="SIGN IN">
+        </div>
+        
+        <div id="gen2" class="gen-box" style="width:300pt;display: none;">
+            <h2>SIGN UP</h2>
+            <form action="../index.html">
+
+                <div class="field">
+                    <i class="ui uil-user"></i>
+                    <input id="user_name_2" type="text" placeholder="Full Name" required>
+                </div>
+
+                <div class="field">
+                    <i  id="ep_icon_1" class="ui uil-at"></i>
+                    <input id="user_name_1" type="email" placeholder="Email ID" required>
+                </div>
+
+                <div class="field">
+                    <i class="ui uil-lock-alt"></i>
+                    <input id="login-pass-1" type="password" placeholder="Enter Password" required>
+                </div>
+
+                <div class="field">
+                    <i class="ui uil-lock-access"></i>
+                    <input id="login-pass-2" type="password" placeholder="Confirm Password" required>
+                </div>
+
+                <input class="submit" type="submit" value="Sign up" onclick="return check()">
+                <div class="phone" onclick="Change_phone()">
+                    <p id="ph_text_1">Use phone number instead</p>
+                </div>
+
+                <div class="log-opt">
+                    <p class="text" style="margin: 35px 0px">Or, sign up with</p>
+                    <div class="other-log">
+                        <a href="https://www.google.com/account/about/" target="_blank"><img src="Images/Ggl.png" alt="Google"></a>
+                        <a href="https://myaccount.microsoft.com/?ref=MeControl&login_hint=jamon%40microsoft.com" target="_blank"><img src="Images/ms.png" alt="Microsoft"></a>
+                        <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569900%7Cb%7Cfb%20login%27%7C&placement=&creative=589460569900&keyword=fb%20login%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-370844460174%26loc_physical_ms%3D9148884%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw-IWkBhBTEiwA2exyO_Es6AYLyWnpum9qlzol5glwUu8JHNDWhIryro_1qqPRTqGRpXU-ghoCjIkQAvD_BwE" target="_blank"><img src="Images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.icloud.com/" target="_blank"><img src="Images/apple.png" alt="Apple"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

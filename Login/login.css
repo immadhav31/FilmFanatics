@@ -1,0 +1,236 @@
+body{   
+    background: linear-gradient(rgb(249, 215, 176),rgb(179, 236, 246));
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}    
+
+.gen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gen-box{
+    z-index: 1;
+    box-shadow : 0px 5px 25px rgb(162, 164, 164);
+    width:250pt;
+    padding:50px 40px;
+    border-radius : 5px;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+.gen-box h2{
+    font-size : 30pt;
+    margin-bottom: 40px;
+    font-weight : 700;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}   
+
+.gen-box .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(184, 182, 177);
+    margin-bottom:25px;
+}
+
+.gen-box .field input{
+    background:none;
+    outline:none;
+    border:none;
+    width:100%;
+    font-size : 15pt;
+    padding-bottom: 5px;
+}
+
+.gen-box .field i{
+    color : rgb(101, 206, 206);
+    font-size : 15pt;
+    margin-right : 10px;
+    padding-bottom : 5px;
+}
+
+::placeholder{
+    color: rgb(154, 164, 174);
+    font-size : 15pt;
+}
+
+.eye-btn{
+    cursor:pointer;
+}
+
+.eye-btn i:hover{
+    color:rgb(37, 35, 35);
+    transition: 0.3s ease;
+}
+
+.forgot{
+    text-align:right;
+    transform:translateY(-5px);
+    font-size:15pt;
+}
+
+.forgot a{
+    color: rgb(32, 54, 179);
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:500;
+    font-size:15pt;
+}
+
+.forgot a:hover{
+    color:rgb(99, 112, 162)
+}
+
+.submit{
+    background-color: rgb(37, 160, 198);    
+    color:white;
+    border:none;
+    outline:none;
+    width:100%;
+    padding:10px 30px;
+    border-radius:5px;
+    font-size:15pt;
+    font-weight:500;
+    margin-top:5px;
+    cursor:pointer;
+    transform:translateY(10px);
+}
+
+.submit:hover{
+    background-color: rgb(44, 121, 172);
+}
+
+.phone{
+    background-color: rgb(0, 0, 0);    
+    color:white;
+    border:none;
+    outline:none;
+    width:5 pt;
+    padding:1px 15px;
+    border-radius:5px;
+    font-size:12pt;
+    font-weight:500;
+    margin-top:7px;
+    cursor:pointer;
+    text-align:center;
+    transform:translateY(10px); 
+
+}
+
+.phone:hover{
+    background-color: rgb(64, 58, 58);
+}
+
+.log-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.log-opt .text{
+    color:rgb(112, 119, 126);
+    font-size:15pt;
+    margin: 25px 0px;
+}
+
+.other-log{
+    display:flex;
+}
+
+.other-log a{
+    border: 1px solid rgb(163, 157, 157);
+    padding: 11px 32px;
+    border-radius:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 5px;
+    transition: border 0.3s ease;
+}
+
+.other-log a:hover{
+    border: 1px solid blue;
+
+}
+
+.other-log a img{
+    width:20px;
+}
+
+.img-box img,.in-img-box img {
+    width:270px;
+}
+
+.sliding-link{
+    display : flex;
+    font-size: 15pt;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center ;
+}
+
+.sliding-link span{
+    color:blue;
+    font-weight: 600;
+    margin-left : 10px;
+    cursor: pointer;
+}
+
+.img-box,.in-img-box{
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 25px rgb(0 0 0 / 15%);
+    height: 475px;
+    padding: 15px 35px;
+}
+
+.img-box{
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.in-img-box{
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.img-box span:hover,.in-img-box span:hover{
+    color:rgb(117, 117, 203);
+}
+
+@media screen and (max-width:950px){
+    .gen{
+        flex-direction: column;
+        margin: 100px 0px;
+        overflow: hidden;
+        padding:30px;
+        box-shadow:none;
+    }
+
+    .gen-box{
+        box-shadow: none;
+    }
+
+    .img-box{
+        border-bottom-left-radius: 3%;  
+        border-top-left-radius: 3%;
+    }
+
+    .in-img-box{
+        border-top-right-radius: 3%; 
+        border-bottom-right-radius: 3%;
+    }   
+
+    .temp{
+        flex-direction: column-reverse;
+    }
+
+}
